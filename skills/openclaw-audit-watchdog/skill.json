@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-audit-watchdog",
+  "version": "0.0.5",
+  "description": "Automated daily security audits for OpenClaw agents.",
+  "homepage": "https://openclaw.security/audit-watchdog",
+  "metadata": {
+    "openclaw": {
+      "emoji": "🔭",
+      "category": "security"
+    }
+  },
+  "requires": {
+    "bins": [
+      "bash"
+    ]
+  }
+}

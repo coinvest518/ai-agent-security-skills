@@ -1,0 +1,18 @@
+{
+  "name": "openclaw-security-feed",
+  "version": "0.0.5",
+  "description": "Security advisory feed with automated NVD CVE polling for OpenClaw-related vulnerabilities. Updated daily.",
+  "homepage": "https://openclaw.security/security-feed",
+  "metadata": {
+    "openclaw": {
+      "emoji": "📡",
+      "category": "security"
+    }
+  },
+  "requires": {
+    "bins": [
+      "curl",
+      "jq"
+    ]
+  }
+}

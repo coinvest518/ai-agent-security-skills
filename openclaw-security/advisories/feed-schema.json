@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OpenClaw Security Advisory Feed Schema",
+  "description": "Schema for validating the OpenClaw Security advisory feed (feed.json)",
+  "type": "object",
+  "required": [
+    "version",
+    "advisories"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Version of the feed schema."
+    },
+    "advisories": {
+      "type": "array",
+      "description": "List of security advisories.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "severity",
+          "exploitability_score",
+          "description",
+          "published_date",
+          "updated_date",
+          "categories"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Unique identifier for the advisory (e.g., CVE-2026-XXXXX, GA-2026-XXX)."
+          },
+          "title": {
+            "type": "string",
+            "description": "Concise title of the advisory."
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "critical",
+              "high",
+              "medium",
+              "low",
+              "info"
+            ],
+            "description": "Severity level of the advisory."
+          },
+          "exploitability_score": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              "none"
+            ],
+            "description": "Exploitability score of the vulnerability."
+          },
+          "description": {
+            "type": "string",
+            "description": "Detailed description of the vulnerability or advisory."
+          },
+          "recommendations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Recommended actions to mitigate the advisory."
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            },
+            "description": "List of URLs to external references."
+          },
+          "published_date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time when the advisory was first published (ISO 8601 format)."
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date and time when the advisory was last updated (ISO 8601 format)."
+          },
+          "categories": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "enum": [
+                "cve",
+                "prompt_injection",
+                "malicious_skill",
+                "best_practice",
+                "platform_vulnerability"
+              ]
+            },
+            "description": "Categories the advisory belongs to."
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Platforms affected by the advisory (e.g., OpenClaw, NanoClaw)."
+          },
+          "affected_skills": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "name",
+                "version_range"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the affected skill."
+                },
+                "version_range": {
+                  "type": "string",
+                  "description": "Version range affected (e.g., '<1.2.0', '>=2.0.0 <2.1.0')."
+                }
+              }
+            },
+            "description": "List of skills and their affected versions."
+          }
+        }
+      }
+    }
+  }
+}

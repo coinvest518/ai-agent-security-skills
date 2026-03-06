@@ -1,0 +1,18 @@
+{
+  "name": "openclaw-security",
+  "version": "0.0.5",
+  "description": "A complete security skill suite for OpenClaw agents.",
+  "main": "index.js",
+  "scripts": {
+    "install-suite": "./scripts/install-suite.sh",
+    "update-suite": "./scripts/update-suite.sh"
+  },
+  "keywords": [
+    "openclaw",
+    "security",
+    "ai-agent",
+    "skill"
+  ],
+  "author": "OpenClaw Security Team",
+  "license": "AGPL-3.0-or-later"
+}

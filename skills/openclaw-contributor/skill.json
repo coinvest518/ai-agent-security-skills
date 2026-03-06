@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-contributor",
+  "version": "0.0.5",
+  "description": "Facilitates community incident reporting for OpenClaw Security.",
+  "homepage": "https://openclaw.security/contributor",
+  "metadata": {
+    "openclaw": {
+      "emoji": "🤝",
+      "category": "security"
+    }
+  },
+  "requires": {
+    "bins": [
+      "curl"
+    ]
+  }
+}

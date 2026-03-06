@@ -1,0 +1,18 @@
+{
+  "name": "openclaw-security-suite",
+  "version": "0.0.5",
+  "description": "A meta-skill for installing, verifying, and maintaining OpenClaw Security skills.",
+  "homepage": "https://openclaw.security/security-suite",
+  "metadata": {
+    "openclaw": {
+      "emoji": "📦",
+      "category": "security"
+    }
+  },
+  "requires": {
+    "bins": [
+      "npx",
+      "jq"
+    ]
+  }
+}

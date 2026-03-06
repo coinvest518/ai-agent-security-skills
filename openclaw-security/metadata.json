@@ -1,0 +1,16 @@
+{
+  "name": "openclaw-security",
+  "version": "0.0.5",
+  "description": "A complete security skill suite for OpenClaw agents, providing unified security monitoring, integrity verification, and threat intelligence.",
+  "homepage": "https://openclaw.security",
+  "author": "OpenClaw Security Team",
+  "license": "AGPL-3.0-or-later",
+  "skills": [
+    "openclaw-security-feed",
+    "openclaw-security-suite",
+    "openclaw-audit-watchdog",
+    "openclaw-soul-guardian",
+    "openclaw-security-nanoclaw",
+    "openclaw-contributor"
+  ]
+}

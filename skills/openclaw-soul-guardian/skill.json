@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-soul-guardian",
+  "version": "0.0.5",
+  "description": "Drift detection and file integrity guard with auto-restore for OpenClaw agents.",
+  "homepage": "https://openclaw.security/soul-guardian",
+  "metadata": {
+    "openclaw": {
+      "emoji": "👻",
+      "category": "security"
+    }
+  },
+  "requires": {
+    "bins": [
+      "python3"
+    ]
+  }
+}
